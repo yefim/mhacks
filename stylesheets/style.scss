@@ -1,8 +1,16 @@
+html {
+  height: 100%;
+}
 body {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+
+  height: 100%;
+  background-image: url('../images/palmer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -23,11 +31,12 @@ h1 {
   top: -6px;
 }
 
+.th {
+  font-size: 12pt;
+  vertical-align: top;
+}
+
 header {
-  background-image: url('../images/palmer.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  
   padding: 100px 0;
   color: #fff;
   h1 {
@@ -35,7 +44,42 @@ header {
     display: inline-block;
   }
   .call-to-action {
+    button {
+      // reset
+      background: none;
+      border: none;
+      padding: 0px;
+      margin: 0px;
 
+      text-transform: uppercase;
+      // font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      position: relative;
+      padding: 5px 20px;
+      box-shadow: #111 1px 1px, #111 2px 2px, #111 3px 3px;
+      // background-color: rgba(240, 240, 240, 0.2);
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=) repeat;
+      color: #111;
+      font-size: 30pt;
+      border: 1px solid #111;
+    }
+    button:hover {
+      background: transparent;
+    }
+  }
+  p {
+    font-size: 20pt;
+  }
+}
+footer {
+  color: #fff;
+  .social {
+    img {
+      width: 48px;
+    }
+  }
+  p {
+    font-size: 20pt;
   }
 }
 
