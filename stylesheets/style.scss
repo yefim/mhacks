@@ -43,12 +43,18 @@ header {
     text-shadow: rgba(60,60,60,0.2) 1px 1px, rgba(60,60,60,0.2) 2px 2px, rgba(60,60,60,0.2) 3px 3px, rgba(60,60,60,0.2) 4px 4px, rgba(60,60,60,0.2) 5px 5px, rgba(60, 60, 60, 0.2) 6px 6px;
     display: inline-block;
   }
+  h2 {
+    -webkit-text-stroke: 1px #aaa;
+  }
   .call-to-action {
     margin: 0 auto;
     display: table;
     span {
       vertical-align: middle;
       display: table-cell;
+      color: #111;
+      text-shadow: rgba(160,160,160,0.8) 1px 1px, rgba(160,160,160,0.8) 2px 2px, rgba(160,160,160,0.8) 3px 3px;
+      font-weight: 800;
     }
     a {
       // reset
@@ -64,7 +70,7 @@ header {
       position: relative;
       padding: 5px 20px;
       box-shadow: #111 1px 1px, #111 2px 2px, #111 3px 3px;
-      text-shadow: rgba(160,60,160,0.8) 1px 1px, rgba(160,160,160,0.8) 2px 2px, rgba(160,160,160,0.8) 3px 3px;
+      text-shadow: rgba(160,160,160,0.8) 1px 1px, rgba(160,160,160,0.8) 2px 2px, rgba(160,160,160,0.8) 3px 3px;
       // background-color: rgba(240, 240, 240, 0.2);
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=) repeat;
       color: #111;
@@ -92,10 +98,15 @@ header {
   }
   p {
     font-size: 20pt;
+    -webkit-text-stroke: 1px #f2f2f2;
   }
 }
 footer {
   .social {
+    h2 {
+      color: #fff;
+      -webkit-text-stroke: 1px #ccc;
+    }
     img {
       width: 48px;
     }
