@@ -113,8 +113,8 @@ footer {
   }
 }
 
-/* Very large screens */
-@media only screen and (min-width: 1441px) {
+/* Medium screens and up */
+@media only screen and (min-width: 768px) {
   header {
     h1 {
       font-size: 80pt;
@@ -123,11 +123,6 @@ footer {
       font-size: 25pt;
     }
   }
-}
-
-/* Medium screens */
-@media only screen and (max-width: 1279px) and (min-width: 768px) {
-
 }
 
 /* Small screens */
