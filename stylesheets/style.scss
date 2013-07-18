@@ -33,8 +33,8 @@ h1 {
 }
 
 .th {
-  font-size: 13pt;
-  line-height: 25px;
+  font-size: 8pt;
+  line-height: 16px;
   vertical-align: top;
 }
 
@@ -59,6 +59,7 @@ header {
       color: #111;
       text-shadow: rgba(160,160,160,0.8) 1px 1px, rgba(160,160,160,0.8) 2px 2px, rgba(160,160,160,0.8) 3px 3px;
       font-weight: 800;
+      font-size: 90%;
     }
     a {
       // reset
@@ -86,8 +87,8 @@ header {
       -webkit-transition: all 0.1s ease-out; /* Saf3.2+, Chrome */
       transition: all 0.1s ease-out;
     }
-    a.register { margin-right: 23px; }
-    a.sponsor { margin-left: 20px; }
+    a.register { margin-right: 17px; }
+    a.sponsor { margin-left: 14px; }
     a:hover {
       text-decoration: none;
       background: transparent;
@@ -102,9 +103,9 @@ header {
   }
   p {
     margin: 0;
-    font-size: 20pt;
     -webkit-text-stroke: 1px #f2f2f2;
-    line-height: 25pt;
+    font-size: 12pt;
+    line-height: 16pt;
   }
 }
 footer {
@@ -122,6 +123,10 @@ footer {
 
 /* Medium screens and up */
 @media only screen and (min-width: 768px) {
+  .th {
+    font-size: 13pt;
+    line-height: 25px;
+  }
   header {
     padding: 100px 0 20px 0;
     h1 {
@@ -135,6 +140,15 @@ footer {
         padding: 5px 20px;
         font-size: 30pt;
       }
+      a.register { margin-right: 23px; }
+      a.sponsor { margin-left: 20px; }
+      span {
+        font-size: 100%;
+      }
+    }
+    p {
+      font-size: 20pt;
+      line-height: 25pt;
     }
   }
 }
