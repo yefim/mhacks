@@ -20,7 +20,8 @@
     });
     return $('.call-to-action').delegate('.register', 'click', function(e) {
       e.preventDefault();
-      return $('.call-to-action').html("<form id='register-form' method='post' action='/register'>\n  <input type='email' placeholder='EMAIL' name='email' required>\n  <input type='submit' value='GO'>\n  <button type='button' class='cancel'>STOP</button>\n</form>");
+      $('.call-to-action').html("<form id='register-form' method='post' action='/register'>\n  <input class='email' type='email' placeholder='EMAIL' name='email' required>\n  <input type='submit' value='GO'>\n  <button type='button' class='cancel'>STOP</button>\n</form>");
+      return $('.email').focus();
     });
   });
 

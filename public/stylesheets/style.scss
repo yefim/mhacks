@@ -204,6 +204,22 @@ footer {
       span {
         font-size: 100%;
       }
+      #register-form {
+        input[type='email'],
+        input[type='text'] {
+          font-size: 30pt;
+          padding-bottom: 5px;
+          width: 460px;
+        }
+        input[type='submit'] {
+          margin-right: 15px;
+        }
+        input[type='submit'],
+        .cancel {
+          font-size: 30pt;
+          padding: 5px 20px;
+        }
+      }
     }
     p {
       font-size: 20pt;

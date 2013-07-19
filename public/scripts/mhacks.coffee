@@ -21,11 +21,14 @@ $ ->
     e.preventDefault()
     $('.call-to-action').html """
       <form id='register-form' method='post' action='/register'>
-        <input type='email' placeholder='EMAIL' name='email' required>
+        <input class='email' type='email' placeholder='EMAIL' name='email' required>
         <input type='submit' value='GO'>
         <button type='button' class='cancel'>STOP</button>
       </form>
     """
+    $('.email').focus()
+
+
   #$('.call-to-action').html """
     #<form id='register-form' method='post' action='/register'>
       #<input type='email' placeholder='EMAIL' name='email' required>
