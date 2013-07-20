@@ -31,4 +31,3 @@ $ ->
         <button type='button' class='cancel'>STOP</button>
       </form>
     """
-    $('.email').focus()

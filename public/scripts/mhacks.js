@@ -25,8 +25,7 @@
     $('.call-to-action').delegate('.cancel', 'click', cancel);
     return $('.call-to-action').delegate('.register', 'click', function(e) {
       e.preventDefault();
-      $('.call-to-action').html("<form id='register-form' method='post' action='/register'>\n  <input class='email' type='email' placeholder='EMAIL' name='email' required>\n  <input type='submit' value='GO'>\n  <button type='button' class='cancel'>STOP</button>\n</form>");
-      return $('.email').focus();
+      return $('.call-to-action').html("<form id='register-form' method='post' action='/register'>\n  <input class='email' type='email' placeholder='EMAIL' name='email' required>\n  <input type='submit' value='GO'>\n  <button type='button' class='cancel'>STOP</button>\n</form>");
     });
   });
 
