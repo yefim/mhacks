@@ -114,6 +114,7 @@ header {
       text-shadow: rgba(160,160,160,0.8) 1px 1px;
     }
     #register-form {
+      margin: -5.5px 0;
       input[type='email'],
       input[type='text'] {
         // reset
@@ -205,6 +206,7 @@ footer {
         font-size: 100%;
       }
       #register-form {
+        margin: -13.5px 0;
         input[type='email'],
         input[type='text'] {
           font-size: 30pt;
