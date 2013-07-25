@@ -19,6 +19,7 @@ $ ->
   $('.call-to-action').delegate '.cancel', 'click', cancel
 
   $('.call-to-action').delegate '.register', 'click', (e) ->
+    console.log "clicked register"
     e.preventDefault()
     $('.call-to-action').html """
       <form id='register-form' method='post' action='/register'>
