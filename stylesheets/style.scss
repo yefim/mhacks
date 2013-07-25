@@ -38,6 +38,20 @@ h1 {
   vertical-align: top;
 }
 
+$placeholder: #444;
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: $placeholder;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $placeholder;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $placeholder;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $placeholder;
+}
+
 header {
   padding: 50px 0 20px 0;
   color: #fff;
@@ -99,6 +113,52 @@ header {
       box-shadow: #111 1px 1px;
       text-shadow: rgba(160,160,160,0.8) 1px 1px;
     }
+    #register-form {
+      margin: -5.5px 0;
+      input[type='email'],
+      input[type='text'] {
+        // reset
+        background: transparent;
+        outline: 0;
+        border: none;
+        // padding: 0;
+
+        margin-right: -4px;
+        font-size: 16pt;
+        width: 120px;
+        border-bottom: 1px solid #222;
+        color: #111;
+      }
+      input[type='submit'],
+      .cancel {
+        // reset
+        position: relative;
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+
+        padding: 1px 4px;
+        font-size: 16pt;
+        box-shadow: #111 1px 1px, #111 2px 2px, #111 3px 3px;
+        text-shadow: rgba(160,160,160,0.8) 1px 1px, rgba(160,160,160,0.8) 2px 2px, rgba(160,160,160,0.8) 3px 3px;
+        // polka dotted bg
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=) repeat;
+        border: 1px solid #111;
+      }
+      input[type='submit']:hover,
+      .cancel:hover {
+        background: transparent;
+      }
+      input[type='submit']:active,
+      .cancel:active {
+        background: transparent;
+        top: 2px;
+        left: 2px;
+        box-shadow: #111 1px 1px;
+        text-shadow: rgba(160,160,160,0.8) 1px 1px;
+      }
+    }
   }
   p {
     margin: 0;
@@ -143,6 +203,23 @@ footer {
       a.sponsor { margin-left: 20px; }
       span {
         font-size: 100%;
+      }
+      #register-form {
+        margin: -13.5px 0;
+        input[type='email'],
+        input[type='text'] {
+          font-size: 30pt;
+          padding-bottom: 5px;
+          width: 460px;
+        }
+        input[type='submit'] {
+          margin-right: 15px;
+        }
+        input[type='submit'],
+        .cancel {
+          font-size: 30pt;
+          padding: 5px 20px;
+        }
       }
     }
     p {
